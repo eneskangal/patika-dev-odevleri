@@ -1,0 +1,164 @@
+/* Ana Ayarlar Başlangıç */
+body{
+  font-size: 14px; /* Font büyüklüğünü 14px yapma */
+  font-family: arial,sans-serif; /* Font ailesi seçimi */
+  color: #202124; /* Yazı rengi */
+  padding: 0; /* İç boşluğu 0 yapma */
+  margin: 0; /* Dış boşluğu 0 yapma */
+}
+/* Ana Ayarlar Bitiş */
+
+/* Panel Başlangıç */
+.panel>nav{
+  color: black; /* Yazı rengi */
+  margin: 0 0 0 auto; /* Sağa kaydırma */
+}
+.panel>nav>ul{
+  display: flex; /* Display'i flex yapma */
+  flex-direction: row-reverse; /* Yönü satırın tersine çevirme */
+  list-style: none; /* Liste stillerine kapatma */  
+}
+.pic>a>img{
+  border-radius: 50%; /* Resmi yuvarlak yapma */
+}
+.headerli{
+  padding: 10px; /* İç boşluk verme */
+}
+.headerli:first-child{
+  padding-top: 0; /* İç yukarıdan boşluk vermeme */
+}
+.headerli a{
+  font-family: arial,sans-serif; /* Yazı ailesi seçimi */
+  display: block; /* Görüntüyü blok yapma */
+  color: rgba(0,0,0,.87); /* Yazı rengi */
+  text-align: center;  /* Yatay olarak ortaya hizalama */
+  text-decoration: none; /* Yazı dekorasyonu kaldırma */
+}
+.headerli a:hover {
+  text-decoration: underline; /* Yazı dekorasyonu alt çizgi yapma */
+}
+/* Panel Bitiş */
+
+/* Content Başlangıç */
+.container{
+  display: flex; /* Görüntüyü flex yapma */
+  align-items: center; /* Dikey olarak hizalama */
+  flex-direction: column; /* Yönü sütün yapma */
+}
+.search-area{
+  margin-top: 20px; /* Dış boşluğu baştan verme */
+  width: 584px; /* Genişlik */
+  height: 44px; /* Uzunluk */
+  border-radius: 24px;  /* Kenarları yuvarlama */
+  border: 1px solid #dfe1e5; /* Border genişliği, türü, rengi */
+  display: flex; /* Görüntüyü flex yapma */
+  padding: 0 15px; /* İç boşluk */
+}
+.search-area:hover{
+  background-color: #fff; /* Arkaplan rengi */
+  box-shadow: 0 1px 6px rgba(32,33,36,.28); /* Gölgeleme */
+  border-color: rgba(223,225,229,0); /* Border rengi seçme */
+}
+.yuzde5{
+  width: 5%; /* Genişlik */
+  height: 44px; /* Uzunluk */ 
+  display: flex; /* Görüntüyü flex yapma */
+  align-items: center; /* Dikey olarak hizalama */
+
+}
+.yuzde80{
+  width: 80%; /* Genişlik */
+  height: 44px; /* Uzunluk */
+  display: flex; /* Görüntüyü flex yapma */
+  align-items: center; /* Dikey olarak hizalama */
+}
+textarea{
+  width: 100%; /* Genişlik */
+  border: none; /* Borderi silme */
+  resize: none; /* Tekrar ölçüklendirmeye kaldırma */
+}
+.yuzde15{
+  width: 15%; /* Genişlik */
+  height: 44px; /* Uzunluk */
+  display: flex; /* Görüntüyü flex yapma */
+  align-items: center; /* Dikey olarak hizalama */
+  justify-content: space-between; /* Yatay olarak hizalama */ 
+}
+svg:first-child{
+  width: 20px; /* Genişlik */
+  height: 20px; /* Uzunluk */ 
+}
+svg{
+  width: 24px; /* Genişlik */
+  height: 24px; /* Uzunluk */
+}
+.button-group{
+  margin-top: 18px; /* Dış boşluk */
+}
+button{
+  background-color: #f8f9fa; /* Arkaplan rengi */
+  border: 1px solid #f8f9fa; /* Border kalınlık, türü, rengi */
+  border-radius: 4px; /* Kenarları yuvarlama */
+  color: #3c4043; /* Yazı rengi */
+  font-family: arial,sans-serif; /* Font ailesi seçimi */
+  font-size: 14px; /* Fontun büyüklüğü */
+  margin: 11px 4px; /* Dış boşluk */
+  padding: 0 16px; /* İç boşluk */
+  line-height: 27px; /* Satır arası mesafe */
+  height: 36px; /* Uzunluk */
+  min-width: 54px; /* Mininum genişlik 54px"
+  text-align: center; /* Yatay olarak hizalama */
+}
+button:hover{
+  box-shadow: 0 1px 1px rgba(0,0,0,.1); /* Kutu gölgesi */
+  background-color: #f8f9fa; /* Arkaplan rengi */
+  border: 1px solid #dadce0; /* Border kalınlık, türü, rengi"
+  color: #202124; /* Yazı rengi */
+}
+/* Content Bitiş*/
+
+/* Footer Başlangıç */
+footer{
+  background-color: #f2f2f2; /* Arkaplan rengi */
+  position: absolute; /* Pozisyonu mutlak yapma */
+  bottom: 0; /* Alttan Opx verme */
+  color: #70757a; /* Altyazı rengi */
+  height: 94px; /* Yükseklik */
+  width: 100vw; /* Genişlik */
+}
+footer>article:nth-child(1){  
+  border-bottom:  1px solid #dadce0; /* Alttan kenarlık verme */
+}
+footer>article, footer>nav{
+  display: flex; /* Ekranı flex ayarlama */
+  align-items: center; /* Dikey olarak hizalama */
+  padding: 0 15px; /* İç boşluk üstten/alttan 0 sağdan soldan 15px verme */
+  height: 45px; /* Yükseklik */
+}
+.bnavbar, .onavbar, .enavbar{
+  list-style: none; /* Liste stillerini kaldırma */
+  display: flex; /* Ekranı flex ayarlama */
+  align-items: center; /* Dikey olarak hizalama */
+  padding: 0; /* İç boşlukları 0 yapma */
+  margin: 0; /* Dış boşukları 0 yapma */
+  width: 33%; /* Genişlik */    
+}
+footer a{
+  text-decoration: none; /* Text dekorasyonları kaldırma */
+  color: #70757a !important; /* Yazı rengini önemli yapma */
+  padding: 15px; /* Her yerden 15px iç boşluk verme */
+  transition: text-decoration 0.5s; /* Geçiktirmeyi sadece yazı dekorasyonda yapma */
+}
+footer a:hover{
+  text-decoration: underline; /* Üste gelince yazı dekorasyonu alt çizgi yapma */
+}
+.onavbar{
+  justify-content: center; /* Yatay olarak ortalama */
+}
+.enavbar{
+  justify-content: end; /* Yatay olarak sağa doğru yapma */
+}
+/* Footer Bitiş */
+
+
+

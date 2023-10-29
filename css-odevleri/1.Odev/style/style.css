@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAF0D7;
+    height: 100vh;
+    max-width: 1140px;
+    margin: auto;
+}
+header{
+    text-align: center;    
+    background-color: aqua;    
+}
+nav>ul>li{
+    list-style: none;
+    display: inline-block;
+}

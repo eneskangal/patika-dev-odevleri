@@ -1,0 +1,58 @@
+body{
+  display:flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+.App{
+  width: 50vw;
+  background-color: white;
+  height: auto;
+}
+.AppHeader{
+  height: 50px;
+  background-color: rgb(246, 250, 253);
+  display: flex;
+  align-items: center;  
+}
+select{
+  margin-left: 10px;
+  width: 120px;
+  height: 30px;
+  border: 2px solid rgb(213, 217, 226);
+  border-radius: 5px;
+}
+.AppBody{
+  display: flex;  
+  height: 150px;
+  align-items: center;
+}
+.col{
+  width: 100%;   
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; 
+}
+.AppBodyTemperatures{
+  display: 100%;  
+  display: flex;
+  justify-content: center;
+}
+.AppBodyText, .AppBodyPic{
+  display: 100%;  
+  display: flex;
+  justify-content: center;  
+}
+.col:first-child{
+  margin-left: 10px;  
+  border: 2px solid rgb(245, 245, 245);;
+  background-color: rgb(252, 252, 252);
+}
+.AppBodyTemperatures{
+  margin-right: 5px; 
+}
+.AppBodyTemperatures>p{
+  margin: 0 5px;
+}
