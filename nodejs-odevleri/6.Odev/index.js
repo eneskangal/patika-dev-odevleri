@@ -2,6 +2,7 @@ const Koa= require('koa');
 const app= new Koa();
 app.use(ctx => {  
   if(ctx.path=='/'){
+    ctx.header()
     ctx.body= '<h1>Index Sayfasına Hosgeldiniz</h1>';
   }
   else if(ctx.path=='/hakkimda'){
