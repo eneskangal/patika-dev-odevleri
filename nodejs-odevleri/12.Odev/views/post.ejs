@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') -%>
+<body>
+  <!-- Navigation -->
+  <%- include('partials/_navBar.ejs') -%>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('/img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1><%= post.title %></h1>            
+            <span class="meta">Posted by
+              <a href="#">Start Bootstrap</a>
+              on <%= post.dateCreated %></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p><%= post.detail %></p>         
+         <p>Placeholder text by
+            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
+            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+        </div>
+        <div class="col-lg-4 col-md-2 d-flex align-items-center justify-content-center flex-column">
+          <a class="btn btn-primary w-75 d-block mb-2" href="/posts/edit/<%= post._id %>">Edit Post</a>
+          <a class="btn btn-danger w-75" href="/posts/<%= post._id %>?_method=DELETE" onclick="return confirm('ARE YOU SURE?')">Delete Post</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <%- include('partials/_footer.ejs') -%>
+</body>
+
+</html>
